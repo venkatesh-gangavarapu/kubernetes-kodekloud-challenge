@@ -21,6 +21,7 @@ Failures are documented inline — not hidden.
 | [Day 01](./days/day-01/README.md) | Create a Pod | `kubectl run` can't set container name — use `--dry-run=client -o yaml` + patch; labels are selectors, not decoration | ✅ Done |
 | [Day 02](./days/day-02/README.md) | Create a Deployment | `kubectl run` creates a Pod, not a Deployment — use `kubectl create deployment`; Deployment → ReplicaSet → Pod ownership chain; `rollout status` is the authoritative readiness check | ✅ Done |
 | [Day 03](./days/day-03/README.md) | Namespaces + Pod | `-n <namespace>` must be on the `--dry-run` command, not just `apply`; `kubectl get pods -A` for cross-namespace visibility; namespace deletion cascades | ✅ Done |
+| [Day 04](./days/day-04/README.md) | Resource Requests & Limits | Requests = scheduler reservation; Limits = runtime enforcement; CPU over limit → throttled; memory over limit → OOMKilled; mismatched requests/limits → Burstable QoS not Guaranteed | ✅ Done |
 ---
 
 ## 🗂️ Deliverable Structure
