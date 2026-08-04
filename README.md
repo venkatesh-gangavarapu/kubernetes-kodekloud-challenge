@@ -24,6 +24,7 @@ Failures are documented inline — not hidden.
 | [Day 04](./days/day-04/README.md) | Resource Requests & Limits | Requests = scheduler reservation; Limits = runtime enforcement; CPU over limit → throttled; memory over limit → OOMKilled; mismatched requests/limits → Burstable QoS not Guaranteed | ✅ Done |
 | [Day 05](./days/day-05/README.md) | Rolling Updates | `kubectl set image` needs the container name not the deployment name — inspect first; `rollout status` blocks until complete; old ReplicaSet kept at 0 for instant rollback | ✅ Done |
 | [Day 06](./days/day-06/README.md) | Rollback | Always inspect `rollout history` before rolling back; `rollout undo` is asynchronous — block on `rollout status`; revision numbers shift after rollback; `revisionHistoryLimit: 0` removes rollback entirely | ✅ Done |
+| [Day 07](./days/day-07/README.md) | ReplicaSet | No `kubectl create replicaset` exists — YAML only; both labels in 3 locations; RS has no rolling update semantics; image changes don't update existing Pods | ✅ Done |
 ---
 
 ## 🗂️ Deliverable Structure
