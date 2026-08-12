@@ -27,6 +27,7 @@ Failures are documented inline — not hidden.
 | [Day 07](./days/day-07/README.md) | ReplicaSet | No `kubectl create replicaset` exists — YAML only; both labels in 3 locations; RS has no rolling update semantics; image changes don't update existing Pods | ✅ Done |
 | [Day 08](./days/day-08/README.md) | CronJob | CronJob → Job → Pod hierarchy; `restartPolicy: Always` rejected at admission — use `OnFailure`; `apiVersion: batch/v1`; range-restricted `sed` for container name patch; manually trigger with `--from=cronjob/` | ✅ Done |
 | [Day 09](./days/day-09/README.md) | Job | `kubectl create job` omits `spec.template.metadata.name` — write YAML directly; `Never` = new Pod per retry (logs preserved); `OnFailure` = restart in-place (logs overwritten); `Completed` is the correct Pod status after success | ✅ Done |
+| [Day 10](./days/day-10/README.md) | ConfigMap + Env + Volume | Namespace → ConfigMap → Pod creation order; ConfigMap in wrong namespace → `CreateContainerConfigError`; shell constructs require `/bin/sh -c`; volume name must match in `volumes[]` and `volumeMounts[]` | ✅ Done |
 ---
 
 ## 🗂️ Deliverable Structure
