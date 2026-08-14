@@ -29,6 +29,7 @@ Failures are documented inline — not hidden.
 | [Day 09](./days/day-09/README.md) | Job | `kubectl create job` omits `spec.template.metadata.name` — write YAML directly; `Never` = new Pod per retry (logs preserved); `OnFailure` = restart in-place (logs overwritten); `Completed` is the correct Pod status after success | ✅ Done |
 | [Day 10](./days/day-10/README.md) | ConfigMap + Env + Volume | Namespace → ConfigMap → Pod creation order; ConfigMap in wrong namespace → `CreateContainerConfigError`; shell constructs require `/bin/sh -c`; volume name must match in `volumes[]` and `volumeMounts[]` | ✅ Done |
 | [Day 11](./days/day-11/README.md) | Pod Troubleshooting | Investigate before fixing: describe → logs → `--previous`; ubuntu:latest exits immediately without a command → ImagePullBackOff; pod spec immutable → delete + reapply; READY=2/2 not just STATUS=Running | ✅ Done |
+| [Day 12](./days/day-12/README.md) | Kubernetes: Update Deployment + Service (nginx) | kubectl patch/scale/set image, rolling update, jsonpath verification, rollout status gate | ✅ Done |
 ---
 
 ## 🗂️ Deliverable Structure
