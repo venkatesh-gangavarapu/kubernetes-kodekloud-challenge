@@ -1,6 +1,6 @@
 # ☸️ Kubernetes Challenge — KodeKloud
 
-[![Days Completed](https://img.shields.io/badge/Days%20Completed-3%2F30-blue?style=for-the-badge)](/)
+[![Days Completed](https://img.shields.io/badge/Days%20Completed-14%2F14-blue?style=for-the-badge)](/)
 [![Platform](https://img.shields.io/badge/Platform-KodeKloud-orange?style=for-the-badge)](https://kodekloud.com/)
 [![Tool](https://img.shields.io/badge/Tool-kubectl-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/docs/reference/kubectl/)
 
@@ -31,7 +31,7 @@ Failures are documented inline — not hidden.
 | [Day 11](./days/day-11/README.md) | Pod Troubleshooting | Investigate before fixing: describe → logs → `--previous`; ubuntu:latest exits immediately without a command → ImagePullBackOff; pod spec immutable → delete + reapply; READY=2/2 not just STATUS=Running | ✅ Done |
 | [Day 12](./days/day-12/README.md) | Kubernetes: Update Deployment + Service (nginx) | kubectl patch/scale/set image, rolling update, jsonpath verification, rollout status gate | ✅ Done |
 | [Day 13](./days/day-13/README.md) | NodePort Service | Services connect to Pods via labels — not to ReplicaSets; `kubectl expose` copies selector automatically; `--node-port` flag doesn't exist on expose → patch afterward; empty Endpoints = selector mismatch | ✅ Done |
-| [Day 14](./day-14/README.md) | Nginx+PHP-FPM + kubectl cp | **4 confirmed bugs:** ConfigMap `listen 8099→80`, `root` wrong path, `SCRIPT_FILENAME $document_root`; **Service `port`+`targetPort` 8099→80** (confirmed: pod curl=200, nodePort=refused → Service is broken link); subPath→restart; bare pod→export first; test both internal AND external | ✅ Done |
+| [Day 14](./days/day-14/README.md) | Nginx+PHP-FPM + kubectl cp | **4 confirmed bugs:** ConfigMap `listen 8099→80`, `root` wrong path, `SCRIPT_FILENAME $document_root`; **Service `port`+`targetPort` 8099→80** (confirmed: pod curl=200, nodePort=refused → Service is broken link); subPath→restart; bare pod→export first; test both internal AND external | ✅ Done |
 ---
 
 ## 🗂️ Deliverable Structure
